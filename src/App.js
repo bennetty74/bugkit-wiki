@@ -5,8 +5,6 @@ import ThemeProvider from "./context/ThemeProvider";
 import {useState} from "react";
 
 
-let key = "";
-
 function App() {
     const [key,setKey] = useState('')
     function handleSearch(){
