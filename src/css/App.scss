@@ -1,10 +1,12 @@
-
+@import "theme.scss";
 .container {
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 100%;
-  background-color: antiquewhite;
+  @include themed(){
+    background-color: t('backgroundColor');
+  }
 
   .search-header {
     height: 40px;
@@ -35,12 +37,14 @@
 
       .search-button {
         margin-left: 10px;
-        background-color: #34a17c;
         padding: 8px 20px;
         border: 1px solid #fff;
         border-radius: 5px;
         color: #fff;
         cursor: default;
+        @include themed(){
+          background-color: t('backgroundColor');
+        }
       }
     }
   }
