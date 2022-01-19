@@ -1,14 +1,18 @@
 $themes: (
         light: (
-                backgroundColor: antiquewhite,
+                backgroundColor: #fcebeb,
                 primaryColor: #319986,
                 switchBg: #ececec,
-                switchFg: #fff
+                switchFg: #fff,
+                borderColor: #28a87c,
+                primaryTextColor: #28a87c
         ), dark: (
                 backgroundColor: #212121,
                 primaryColor: #319986,
                 switchBg: #fcfcfc,
-                switchFg: #212121
+                switchFg: #212121,
+                borderColor: #50d5a8,
+                primaryTextColor: #57f5c1
         )
 );
 
