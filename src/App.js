@@ -68,7 +68,7 @@ function App() {
 
     function SiteList() {
         const siteItems = siteList.map(item =>
-            <div className="site-item" onClick={() => toTarget(item.url)}>
+            <div className="site-item" onClick={() => toTarget(item.url)} key={item.name}>
                 <div className="img">{item.name.substr(0,1).toUpperCase()}</div>
                 <div className="name">{item.name}</div>
             </div>
