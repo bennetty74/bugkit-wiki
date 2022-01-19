@@ -41,7 +41,7 @@
         .select{
           height: 2.3rem;
           width: 8vw;
-          max-width: 85px;
+          max-width: 80px;
           border: 1px solid #fcfcfc;
           padding: 5px 0 5px 10px;
           border-radius: 20px 0 0 20px;
@@ -53,10 +53,14 @@
           }
           @media (max-width: $mobileWidth) {
             width: 21vw;
+            max-width: 80px;
           }
         }
         .select:focus{
           outline: none;
+        }
+        .select:not(-internal-list-box){
+          background: none;
         }
         .search-input {
           outline: none;
