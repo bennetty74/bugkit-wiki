@@ -70,7 +70,7 @@
           @media (max-width: $mobileWidth) {
             min-width: 50vw;
           }
-          width: 35vw;
+          width: 30vw;
         }
 
         .search-input:focus{
@@ -91,6 +91,11 @@
           color: t("primaryTextColor");
           border: 1px solid t("borderColor");
         }
+      }
+      .search-button:hover{
+          @include themed(){
+            box-shadow: 0 0 4px t('borderColor');
+          }
       }
     }
 
