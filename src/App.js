@@ -1,8 +1,9 @@
 import './css/App.scss';
 import logo from './img/logo.svg';
-import Switch from './components/Switch'
+import Switch from './components/switch/Switch'
 import ThemeProvider from "./context/ThemeProvider";
 import {useState} from "react";
+import Footer from "./components/footer/Footer";
 
 
 function App() {
@@ -128,6 +129,7 @@ function App() {
                     </div>
                     <SiteList/>
                 </div>
+                <Footer/>
             </div>
         </ThemeProvider>
     );

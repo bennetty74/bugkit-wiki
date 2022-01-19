@@ -1,5 +1,5 @@
 import './Switch.scss'
-import ThemeContext from "../context/ThemeContext";
+import ThemeContext from "../../context/ThemeContext";
 import {useContext} from "react";
 
 function Switch() {
