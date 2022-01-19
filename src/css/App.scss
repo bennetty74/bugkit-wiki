@@ -28,7 +28,7 @@
     .search-wrapper {
       display: flex;
       flex-direction: row;
-      width: 60vw;
+      width: 50vw;
       @media (max-width: $mobileWidth) {
         width: 80vw;
       }
@@ -39,7 +39,7 @@
         align-items: center;
 
         .select{
-          height: 2.3rem;
+          height: 2.4rem;
           width: 8vw;
           max-width: 80px;
           border: 1px solid #fcfcfc;
@@ -71,7 +71,7 @@
           @media (max-width: $mobileWidth) {
             min-width: 50vw;
           }
-          min-width: 40vw;
+          width: 35vw;
         }
 
         .search-input:focus{
@@ -103,7 +103,7 @@
       @media (max-width: $mobileWidth) {
         width: 90%;
       }
-      width: 63%;
+      width: 50vw;
       .site-item {
         display: flex;
         flex-direction: column;
