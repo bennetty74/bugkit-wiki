@@ -10,7 +10,7 @@
   padding: 5px 0;
 
   .content {
-    font-size: 14px;
+    font-size: 8px;
     @include themed() {
       color: t('secondaryTextColor');
     }
