@@ -77,19 +77,6 @@ function App() {
         setEngine(e.target.value)
     }
 
-    /**
-     * 条件渲染搜索button
-     * @param props isMobile
-     * @returns {JSX.Element|null} 如果是移动端，则返回null，反之返回search button
-     * @constructor
-     */
-    function SearchButton(props) {
-        if (props.isMobile) {
-            return null;
-        }
-        return <div className="search-button" onClick={handleSearch}>搜索</div>;
-    }
-
     function SiteList() {
         const siteItems = siteList.map(item =>
             <div className="site-item" onClick={() => toTarget(item.url)} key={item.name}>
@@ -116,16 +103,13 @@ function App() {
                         <img src={logo} alt={"logo"}/>
                     </div>
                     <div className="search-wrapper">
-                        <div className="search-input-group">
-                            <select className="select" onClick={(e) => handleEngineChange(e)}>
-                                <option value="baidu">Baidu</option>
-                                <option value="google">Google</option>
-                                <option value="bing">Bing</option>
-                            </select>
-                            <input value={key} className="search-input" placeholder="嗖嗖嗖..."
-                                   onChange={e => setKey(e.target.value)} onKeyUp={event => handleEnter(event)}/>
-                        </div>
-                        <SearchButton isMobile={isMobile()}/>
+                        <select className="select" onClick={(e) => handleEngineChange(e)}>
+                            <option value="baidu">Baidu</option>
+                            <option value="google">Google</option>
+                            <option value="bing">Bing</option>
+                        </select>
+                        <input value={key} className="search-input" placeholder="嗖嗖嗖..."
+                               onChange={e => setKey(e.target.value)} onKeyUp={event => handleEnter(event)}/>
                     </div>
                     <SiteList/>
                 </div>
